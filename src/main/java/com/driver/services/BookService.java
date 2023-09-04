@@ -16,11 +16,11 @@ public class BookService {
 
 
 
-    @Autowired
-    BookRepository bookRepository;
 
-    @Autowired
-    HotelRepository hotelRepository;
+    BookRepository bookRepository = new BookRepository();
+
+
+    HotelRepository hotelRepository = new HotelRepository();
 
 
     public int bookARoom(Booking booking) {

@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    @Autowired
-    UserRepository userRepository;
+
+    UserRepository userRepository =  new UserRepository();
 
     public int addUser(User user) {
        int ans = userRepository.addUser(user);
