@@ -73,4 +73,8 @@ public class HotelService {
 
 
     }
+
+    public boolean already(String hotelName) {
+        return hotelRepository.already(hotelName);
+    }
 }
