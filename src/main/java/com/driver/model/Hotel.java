@@ -11,9 +11,6 @@ public class Hotel {
 
     private int pricePerNight;
 
-
-
-
     public Hotel(String hotelName, int availableRooms, List<Facility> facilities, int pricePerNight) {
         this.hotelName = hotelName;
         this.availableRooms = availableRooms;
