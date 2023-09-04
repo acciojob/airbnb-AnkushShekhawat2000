@@ -1,11 +1,28 @@
 package com.driver.model;
 
-public enum Facility {
+import java.util.List;
 
-    GYM,
-    SWIMMING_POOL,
-    BAR,
-    FOOD,
-    PARKING,
-    LAUNDRY
+public enum Facility {
+    ;
+
+//    GYM,
+//    SWIMMING_POOL,
+//    BAR,
+//    FOOD,
+//    PARKING,
+//    LAUNDRY;
+
+   private List<Facility> facilities;
+
+    Facility(List<Facility> facilities) {
+        this.facilities = facilities;
+    }
+
+    public List<Facility> getFacilities() {
+        return facilities;
+    }
+
+    public void setFacilities(List<Facility> facilities) {
+        this.facilities = facilities;
+    }
 }
