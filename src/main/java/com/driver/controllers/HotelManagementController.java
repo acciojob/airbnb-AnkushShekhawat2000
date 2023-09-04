@@ -22,14 +22,13 @@ import java.util.List;
 @RequestMapping("/hotel")
 public class HotelManagementController {
 
-    @Autowired
-    HotelService hotelService;
 
-    @Autowired
-    UserService userService;
+    HotelService hotelService = new HotelService();
 
-    @Autowired
-    BookService bookService;
+    UserService userService = new UserService();
+
+
+    BookService bookService = new BookService();
     @PostMapping("/add-hotel")
     public String addHotel(@RequestBody Hotel hotel){
 
